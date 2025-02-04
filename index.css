@@ -1,0 +1,24 @@
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-content: center;
+    display: flex;
+    flex: content;
+    color: rgb(2, 16, 16);
+    margin-top: 100px;
+
+}
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-content: center;
+    display: flex;
+    color: rgb(2, 16, 16);
+}
+body{
+    padding: 50px;
+    margin: 40px;
+    background-color: rgb(189, 198, 214);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(2, 16, 16);
+    
+}

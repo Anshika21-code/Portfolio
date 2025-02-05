@@ -1,133 +1,140 @@
-/* Global Reset */
+/* General Styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Main Layout */
-body {
-    display: flex;
-    background-color: #f8f9fa;
-}
-
-/* Sidebar */
-.sidebar {
-    width: 280px;
-    background: #ffffff;
-    padding: 30px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Background Image */
+  body {
+    background-image: url('bg-home-office-bookshelf.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff; 
+  }
+  
+  /* Header */
+  header {
     text-align: center;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-    height: 100vh;
-    position: fixed;
-}
-
-/* Profile Image */
-.profile-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    border: 3px solid #ddd;
-}
-
-/* Sidebar Links */
-.sidebar h2 {
-    font-size: 20px;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-.sidebar p {
-    color: #007bff;
-    font-size: 14px;
+    padding: 100px,50px ;
+    background: rgba(0, 0, 0, 0.6); 
+    
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
     text-transform: uppercase;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-.sidebar nav {
-    margin-top: 20px;
-}
-
-.sidebar nav ul {
+    letter-spacing: 2px;
+  }
+  
+  header h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #f5a623;
+  }
+  
+  /* Main Section */
+  main {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+  }
+  
+  /* Sections */
+  section {
+    margin-bottom: 40px;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    color: #f5a623;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #f5a623;
+    padding-bottom: 5px;
+  }
+  
+  section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Links */
+  a {
+    color: #f5a623;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Projects */
+  section img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    font-size: 1rem;
+    color: #ddd;
+  }
+  
+  footer ul {
     list-style: none;
-}
-
-.sidebar nav ul li {
-    margin: 10px 0;
-}
-
-.sidebar nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    font-weight: 500;
-    display: block;
-    padding: 8px 0;
-    transition: 0.3s;
-}
-
-.sidebar nav ul li a:hover {
-    color: #007bff;
-}
-
-/* Main Content */
-.main-content {
-    margin-left: 280px;
-    padding: 60px;
-    flex-grow: 1;
+    padding: 10px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
-}
-
-/* Hero Section */
-.hero {
-    text-align: left;
-}
-
-.hero h1 {
-    font-size: 50px;
-    font-weight: 700;
-    color: #000;
-}
-
-.hero p {
-    font-size: 16px;
-    color: #555;
-    margin: 15px 0;
-}
-
-.hero a {
-    display: inline-block;
-    text-decoration: none;
-    font-size: 16px;
+  }
+  
+  footer ul li {
+    margin: 0 10px;
+  }
+  
+  footer ul li a {
+    color: #f5a623;
+    font-size: 1.2rem;
+  }
+  
+  footer ul li a:hover {
     color: #fff;
-    background: #007bff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    main {
+      width: 95%;
+    }
+  
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    header h2 {
+      font-size: 1.2rem;
+    }
+  
+    section h2 {
+      font-size: 1.8rem;
+    }
+  }
 
-.hero a:hover {
-    background: #0056b3;
-}
 
-/* Responsive */
-@media (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-    .main-content {
-        margin-left: 0;
-        padding: 20px;
-    }
-    .hero h1 {
-        font-size: 36px;
-    }
-}
+  

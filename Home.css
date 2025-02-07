@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #c0add7;
+    color: #151515;
+}
+
+/* Navigation Bar */
+header {
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: center;
+    background: rgb(229, 170, 242);
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: red;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 10%;
+    height: 100vh;
+}
+
+text {
+    max-width: 500px;
+}
+
+.hello {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.highlight {
+    color: red;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 16px;
+    margin: 20px 0;
+    color: #181818;
+    text-align: justify;
+}
+
+.btn {
+    background: rgb(250, 2, 43);
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: darkred;
+}
+
+/* Hero Image */
+.image img {
+    max-width: 400px;
+    border-radius: 10px;
+    filter: grayscale(100%);
+}
